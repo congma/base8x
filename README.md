@@ -5,8 +5,8 @@
 `base8x` -- Base-(85 ~ 95) binary/ASCII conversion.
 
 Encodes binary data 4 bytes a time into a string of maximal length 5, using
-only ASCII printable characters.  The alphabet can be specified by the user.
-The inverse operation (decoding) can also be performed.
+at least 85 of the 95 ASCII printable characters.  The alphabet can be
+specified by the user.  The inverse operation (decoding) can also be performed.
 
 
 ## USAGE
@@ -18,11 +18,10 @@ See docstring for the `Base8xCodec` class.
 
 The example script `example_wpskg.py` generates random secret keys for
 WordPress's `wp-config.php` file, just like WP's online key generation service
-at https://api.wordpress.org/secret-key/1.1/salt/  Binary data from the random
-source `/dev/urandom` is converted into strings suitable for use as PHP
-literal.
+at https://api.wordpress.org/secret-key/1.1/salt/
 
-The output should look like the following:
+Binary data from the random source `/dev/urandom` is converted into strings
+suitable for use as PHP literal.  The output should look like the following:
 
 ```php
 define('AUTH_KEY',         'TRb]|u{xmvW7,02tiDA@j|{iSMMqxbu~k #R|H-UmZJXeJSU:9');
