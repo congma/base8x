@@ -50,7 +50,7 @@ def use(nbits):
 if __name__ == "__main__":
     import sys
     try:
-        bits = sys.argv[1]
+        bits = int(sys.argv[1])
     except IndexError:
         bits = 320
     use(bits)
