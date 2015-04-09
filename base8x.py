@@ -148,7 +148,6 @@ class Base8xCodec(object):
     are supported.
     """
     def __init__(self, alphabet):
-        # alphabet could be generator, so tuple-ify first.
         self._alphabet = _validate_alphabet(alphabet)
         if self._alphabet is None:
             raise ValueError("Invalid input alphabet")
