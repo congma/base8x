@@ -93,7 +93,7 @@ def _validate_alphabet(seq):
     """
     # Early-exit checker for the uniqueness of members.
     seen = set()
-    accept = []     # Set membership is O(1), but maybe unecessary anyway...
+    accept = []     # Set membership is O(1), but maybe unnecessary anyway...
     # Filter out duplicate or unprintable characters.
     # Works even if seq never terminates, due to the pigeonhole principle.
     for item in seq:
