@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/congma/base8x.svg?branch=master)](https://travis-ci.org/congma/base8x)
+
 # base8x
 
 ## SYNOPSIS

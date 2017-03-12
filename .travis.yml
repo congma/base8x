@@ -1,0 +1,11 @@
+language: python
+python:
+  - "2.7"
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -y php
+install:
+# command to run tests
+script:
+  - "python base8x.py -v"
+  - "python example_wpskg.py | php -l"
