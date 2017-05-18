@@ -15,4 +15,4 @@ install:
 
 script:
     - "python base8x.py -v"
-    - "(echo '<?php'; python example_wpskg.py; echo '?>') | php -l"
+    - "{ echo '<?php'; python example_wpskg.py; echo '?>'; } | php -l"
